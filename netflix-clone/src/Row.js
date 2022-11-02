@@ -3,6 +3,7 @@ import axios from "./axios";
 import "./Row.css";
 import Youtube from "react-youtube";
 import movieTrailer from "movie-trailer";
+
 //baseUrl for the lack of functionlaity
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
@@ -74,3 +75,5 @@ function Row({ title, fetchUrl, isLargeRow }) {
 }
 
 export default Row;
+
+ 

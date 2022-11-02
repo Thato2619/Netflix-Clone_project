@@ -1,0 +1,33 @@
+/** add styling to the Nav container, enabnle imaages to be placed at the top*/
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1; /** helps adds effect as the user scrolls down*/
+  
+    /** add animations*/
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+  }
+  
+  .nav_black {
+    background-color: #111;
+}
+/** style netflix logo*/
+.nav_logo {
+    width: 80px;
+    position: fixed;
+    left: 0;
+    object-fit: contain;
+}
+
+/** style netflix avatotr*/
+.nav_avator {
+    width: 30px;
+    position: fixed;
+    right: 0;
+    object-fit: contain;
+}

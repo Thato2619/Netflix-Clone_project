@@ -1,32 +1,43 @@
 .row {
     margin-left: 20px;
-}
-
-/*Styles the positioing and layout of the images/posters*/
-.row_posters {
+  }
+  
+  /*Styles the positioing and layout of the images/posters*/
+  .row_posters {
     display: flex;
     overflow-y: hidden; /*hides scroll of y axis*/
     overflow-x: scroll; /*brings out the scroll*/
     padding: 20px;
-}
-
+  }
+  
   /*helps assists no to display the scrollbar but keeps its functionality of it */
-.row_posters::-webkit-scrollbar {
+  .row_posters::-webkit-scrollbar {
     display: none;
-}
-
-/*Styles the width and size of images/posters in img tag*/
-
-.row_poster {
+  }
+  
+  /*Styles the width and size of images/posters in img tag*/
+  
+  .row_poster {
     object-fit: contain; /*keeps the expects ratio*/
     width: 100%;
     max-height: 100px;
     margin-right: 10px;
     transition: transform 450ms;
-}
-
-/*adds a smooth effect to the transitions of the images/posters*/
-.row_poster:hover {
+  }
+  
+  /*adds a smooth effect to the transitions of the images/posters*/
+  .row_poster:hover {
     transform: scale(1.08);
     opacity: 1;
-}
+  }
+  
+  /*styling for larger row ~ This is for Netflix Original*/
+  .row_posterLarge {
+    max-height: 250px;
+  }
+  
+  /*styling for hover in  larger row ~ This is for Netflix Original*/
+  .row.row_posterLarge:hover {
+    transform: scale(1.09);
+  }
+  
